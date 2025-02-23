@@ -17,6 +17,43 @@
             </p>  
           </form>
     </dialog>
+    <dialog class="addTodo">
+        <form class="todoform" method="dialog">
+            <p>
+              <label for="title">Title:</label>
+              <input type="text" id="todotitle" name="title" />
+            </p>
+            <p>
+                <label for="description">Description:</label>
+                <textarea name="description" id="tododescription"></textarea>
+            </p>
+            <p>
+                <label for="dueDate">Due Date:</label>
+                <input type="date" id="tododueDate" name="dueDate" />
+            </p>
+            <fieldset>
+                <legend>Select Priority:</legend>
+              
+                <div>
+                  <input type="radio" id="high" name="priority" value="high" checked />
+                  <label for="high">High Priority</label>
+                </div>
+              
+                <div>
+                  <input type="radio" id="medium" name="priority" value="medium" />
+                  <label for="medium">Medium Priority</label>
+                </div>
+              
+                <div>
+                  <input type="radio" id="low" name="priority" value="low" />
+                  <label for="low">Low Priority</label>
+                </div>
+              </fieldset>
+            
+            <!-- <button class="todoSubmit"  type="submit" formmethod="dialog">Send your message</button> -->
+             
+          </form>
+    </dialog>
     <div class="bigcontainer">
         <div class="projectcontainer"></div>
         <div class="todocontainer"></div>
