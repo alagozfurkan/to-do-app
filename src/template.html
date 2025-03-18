@@ -20,7 +20,7 @@
     <dialog class="addTodo">
         <form class="todoform" method="dialog">
             <p>
-              <label for="title">Title:</label>
+              <label for="title" id="title">Title:</label>
               <input type="text" id="todotitle" name="title" />
             </p>
             <p>
@@ -35,17 +35,17 @@
                 <legend>Select Priority:</legend>
               
                 <div>
-                  <input type="radio" id="high" name="priority" value="high" checked />
+                  <input type="radio" id="high" name="priority" value="High Priority"  />
                   <label for="high">High Priority</label>
                 </div>
               
                 <div>
-                  <input type="radio" id="medium" name="priority" value="medium" />
+                  <input type="radio" id="medium" name="priority" value="Medium Priority" />
                   <label for="medium">Medium Priority</label>
                 </div>
               
                 <div>
-                  <input type="radio" id="low" name="priority" value="low" />
+                  <input type="radio" id="low" name="priority" value="Low Priority" />
                   <label for="low">Low Priority</label>
                 </div>
               </fieldset>
@@ -54,7 +54,18 @@
              
           </form>
     </dialog>
+    <dialog class="showdetail">
+      <h1 class="detailtitle"></h1>
+      <p class="detaildescription"></p>
+      <p class="detaildate"></p>
+      <p class="detailpriority"></p>
+      <button class="detailclosebutton">Close</button>
+    </dialog>
     <div class="bigcontainer">
+        <div class="title">
+          <h1 class="thetitle">TO - DO</h1>
+        </div>
+        <div class="staticprojectcontainer"></div>
         <div class="projectcontainer"></div>
         <div class="todocontainer"></div>
     </div>
